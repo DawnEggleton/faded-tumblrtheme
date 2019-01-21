@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!---- theme by http://codesbylux.tumblr.com --->
+        <title>Characters</title>
+        <link rel="shortcut icon" href="https://static.tumblr.com/2477bc070ab0aa729dc8870945ffb2c2/t22pj5r/jRqplnobe/tumblr_static_71hpplu83aww48cw88o0o48s8.jpg">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <link href="//use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+             // init Isotope
+             var $grid = $('.grid').isotope({
+               itemSelector: '.grid-item'
+             });
+            
+             // store filter for each group
+             var filters = {};
+            
+             $('.filters').on( 'click', '.button', function() {
+               var $this = $(this);
+               // get group key
+               var $buttonGroup = $this.parents('.button-group');
+               var filterGroup = $buttonGroup.attr('data-filter-group');
+               // set filter for group
+               filters[ filterGroup ] = $this.attr('data-filter');
+               // combine filters
+               var filterValue = concatValues( filters );
+               // set filter for Isotope
+               $grid.isotope({ filter: filterValue });
+             });
+            
+             // change is-checked class on buttons
+             $('.button-group').each( function( i, buttonGroup ) {
+               var $buttonGroup = $( buttonGroup );
+               $buttonGroup.on( 'click', 'button', function() {
+                 $buttonGroup.find('.is-checked').removeClass('is-checked');
+                 $( this ).addClass('is-checked');
+               });
+             });
+            
+            });
+            
+            // flatten object by concatting values
+            function concatValues( obj ) {
+             var value = '';
+             for ( var prop in obj ) {
+               value += obj[ prop ];
+             }
+             return value;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/characters">Characters</a>
+            <a href="/tagged/resources">Resources</a>
+            <a href="/tagged/inspiration">Inspiration</a>
+            <a href="/tags">Tag List</a>
+            <a href="//codesbylux.tumblr.com">Codes</a>
+        </div>
+        <div class="nav-border">
+            <div class="iconbox"><div class="iconbox-inner">
+                <img src="https://static.tumblr.com/2477bc070ab0aa729dc8870945ffb2c2/t22pj5r/jRqplnobe/tumblr_static_71hpplu83aww48cw88o0o48s8.jpg">
+            </div></div>
+        </div>
+        
+        <div class="left">
+            <div id="title">lux.</div>
+            <div class="links" style="display: table;">
+                <div style="display: table-cell; vertical-align: bottom;" class="filters">
+                    <div class="button-group" data-filter-group="status">
+                        <button class="button is-checked" data-filter="">all sites</button><br>
+                        <button class="button" data-filter=".adr">love the adrenaline</button><br>
+                        <button class="button" data-filter=".hush">hush hush hush</button><br>
+                        <button class="button" data-filter=".ina">inactive</button>
+                    </div>
+                    <div class="button-group" data-filter-group="gender">
+                        <button class="button is-checked" data-filter="">all genders</button><br>
+                        <button class="button" data-filter=".m">male</button><br>
+                        <button class="button" data-filter=".f">female</button>
+                    </div>
+                    <div class="button-group" data-filter-group="age">
+                        <button class="button is-checked" data-filter="">all ages</button><br>
+                        <button class="button" data-filter=".ya">teens & young adults</button><br>
+                        <button class="button" data-filter=".a">adults</button><br>
+                        <button class="button" data-filter=".imm">immortals</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right">
+           <div class="grid">
+
+
+                <div class="grid-item ina m ya">
+                    <div class="cardbg"></div>
+                    <div class="card">
+                        <a href="/name">
+                            <img src="http://placehold.it/190x260">
+                            <div class="charname">
+                                name.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item ina m ya">
+                    <div class="cardbg"></div>
+                    <div class="card">
+                        <a href="/name">
+                            <img src="http://placehold.it/190x260">
+                            <div class="charname">
+                                name.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+
+    </body>
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <style type="text/css">
+    
+    @font-face {
+        font-family: 'slowly_oneregular';
+        src: url('//dl.dropboxusercontent.com/s/ccfzyjzewgshe6n/slowly_one-webfont.eot');
+        src: url('//dl.dropboxusercontent.com/s/ccfzyjzewgshe6n/slowly_one-webfont.eot?#iefix') format('embedded-opentype'),
+             url('//dl.dropboxusercontent.com/s/3t1wjioqpakrp09/slowly_one-webfont.woff2') format('woff2'),
+             url('//dl.dropboxusercontent.com/s/ym56ploy6zsdc7n/slowly_one-webfont.woff') format('woff'),
+             url('//dl.dropboxusercontent.com/s/djada1vuq0959r9/slowly_one-webfont.ttf') format('truetype'),
+             url('//dl.dropboxusercontent.com/s/jomhvro80lx1kq3/slowly_one-webfont.svg#slowly_oneregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    body {
+        background: #e7e9e9;
+        margin: 0px;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 10px;
+        line-height: 100%;
+    }
+    
+    a {
+        text-decoration:none;
+        outline:none;
+        -moz-outline-style:none;
+        color:#707c7f;
+        transition-duration: 1s;
+    }
+    
+    img {
+        border:none;
+    }
+    
+    h1 {
+        font-size:15px;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #939fa2;
+        border-bottom: 1px solid #818181;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .nav-border {
+        position: fixed;
+        top: 71px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #efefef;
+        border-bottom: 1px solid #a6a6a6;
+        z-index: 3;
+    }
+    .iconbox {
+        position: absolute;
+        top: -26px;
+        left: calc(50% - 26px);
+        width: 47px;
+        height: 47px;
+        background: #efefef;
+        border: 1px solid #818181;
+        transform: rotate(45deg);
+        padding: 4px;
+    }
+    .iconbox-inner {
+        position: relative;
+        width:45px;
+        height: 45px;
+        border: 1px solid #818181;
+        overflow: hidden;
+    }
+    .iconbox-inner img {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 65px;
+        height: 65px;
+        transform: rotate(-45deg);
+    }
+    
+    .left {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: calc(50% + 2px);
+        height: calc(100% - 76px);
+        background: url(https://static.tumblr.com/f3f40a8e8cf49114d9c9583440b77d5c/t22pj5r/zxYplnobe/tumblr_static_62eidgwjym0wgk80s0ggkg4ws.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .links {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        height: calc(100% - 200px);
+        width: 100%;
+        text-align: right;
+    }
+    .links a {
+        display: inline-block;
+        background: #ffffff;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        line-height: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .links a:hover {
+        padding-right: 25px;
+    }<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!---- theme by http://codesbylux.tumblr.com --->
+        <title>Characters</title>
+        <link rel="shortcut icon" href="https://static.tumblr.com/2477bc070ab0aa729dc8870945ffb2c2/t22pj5r/jRqplnobe/tumblr_static_71hpplu83aww48cw88o0o48s8.jpg">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                <script>
+            $(document).ready(function(){
+            
+                $('ul.tabs li').click(function(){
+                    var tab_id = $(this).attr('data-tab');
+            
+                    $('ul.tabs li').removeClass('current');
+                    $('.tab-content').removeClass('current');
+            
+                    $(this).addClass('current');
+                    $("#"+tab_id).addClass('current');
+                })
+            
+            })
+        </script>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/characters">Characters</a>
+            <a href="/tagged/resources">Resources</a>
+            <a href="/tagged/inspiration">Inspiration</a>
+            <a href="/tags">Tag List</a>
+            <a href="//codesbylux.tumblr.com">Codes</a>
+        </div>
+        <div class="nav-border">
+            <div class="iconbox"><div class="iconbox-inner">
+                <img src="https://static.tumblr.com/2477bc070ab0aa729dc8870945ffb2c2/t22pj5r/jRqplnobe/tumblr_static_71hpplu83aww48cw88o0o48s8.jpg">
+            </div></div>
+        </div>
+        
+        <div class="left content">
+        
+        
+        
+                
+            <div id="tab-1" class="tab-content current">
+                
+                <div class="col-left">
+                    <h1>name.</h1>
+                    <div class="section">
+                        full name<br>
+                        nicknames
+                    </div>
+                    <h1>gender & pronouns.</h1>
+                    <div class="section">
+                        male/female<br>
+                        pronouns
+                    </div>
+                    <h1>age & birthday.</h1>
+                    <div class="section">
+                        00 years old<br>
+                        month 00, 0000
+                    </div>
+                    <h1>astrology.</h1>
+                    <div class="section">
+                        astrological sign
+                    </div>
+                    <h1>sexuality.</h1>
+                    <div class="section">
+                        sexuality
+                    </div>
+                    <h1>ship.</h1>
+                    <div class="section">
+                        type of ship<br>
+                        name of person
+                    </div>
+                    <h1>height & weight.</h1>
+                    <div class="section">
+                        0'00" and 000 lbs
+                    </div>
+                    <h1>face.</h1>
+                    <div class="section">
+                        first last
+                    </div>
+                    <h1>group.</h1>
+                    <div class="section">
+                        member group
+                    </div>
+                    <h1>career.</h1>
+                    <div class="section">
+                        career
+                    </div>
+                </div>
+                <div class="col-right">
+                    <h1>likes.</h1>
+                    <div class="section">
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                    <p></div>
+                    <h1>dislikes.</h1>
+                    <div class="section">
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                    <p></div>
+                    <h1>traits.</h1>
+                    <div class="section">
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                    <p></div>
+                    <h1>habits.</h1>
+                    <div class="section">
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                    <p></div>
+                    <h1>features.</h1>
+                    <div class="section">
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                    <p></div>
+                    <h1>facts.</h1>
+                    <div class="section">
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                        <i class="fal fa-plus"></i> item<br>
+                    <p></div>
+                </div>
+                <div class="col-wide">
+                    <h1>freeform.</h1>
+                    <div class="section">
+                        Content
+                    </div>
+                </div>
+                
+            <div style="clear: both;"></div></div>
+            
+            
+            
+            
+        </div>
+        
+        <div class="right"
+             style="background-image: 
+                    url(https://files.jcink.net/uploads/bitteraftershock/thisantigravity/alex_lrg.jpg);"
+            >
+            <div id="title">
+            
+                first last.
+                    
+            </div>
+            <div class="links" style="display: table;">
+                <div style="display: table-cell; vertical-align: bottom;" class="filters">
+                    <a href="">blog posts</a><br>
+                    <a href="">image stash</a>
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">
+                            <i class="fal fa-long-arrow-right"></i>
+                            site name
+                        </li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i" rel="stylesheet"> 
+
+    <style type="text/css">
+    
+    @font-face {
+        font-family: 'slowly_oneregular';
+        src: url('//dl.dropboxusercontent.com/s/ccfzyjzewgshe6n/slowly_one-webfont.eot');
+        src: url('//dl.dropboxusercontent.com/s/ccfzyjzewgshe6n/slowly_one-webfont.eot?#iefix') format('embedded-opentype'),
+             url('//dl.dropboxusercontent.com/s/3t1wjioqpakrp09/slowly_one-webfont.woff2') format('woff2'),
+             url('//dl.dropboxusercontent.com/s/ym56ploy6zsdc7n/slowly_one-webfont.woff') format('woff'),
+             url('//dl.dropboxusercontent.com/s/djada1vuq0959r9/slowly_one-webfont.ttf') format('truetype'),
+             url('//dl.dropboxusercontent.com/s/jomhvro80lx1kq3/slowly_one-webfont.svg#slowly_oneregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    body {
+        background: #e7e9e9;
+        margin: 0px;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 10px;
+        line-height: 100%;
+    }
+    
+    a {
+        text-decoration:none;
+        outline:none;
+        -moz-outline-style:none;
+        color:#707c7f;
+        transition-duration: 1s;
+    }
+    
+    img {
+        border:none;
+    }
+    
+    h1 {
+        font-size:15px;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #939fa2;
+        border-bottom: 1px solid #818181;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .nav-border {
+        position: fixed;
+        top: 71px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #efefef;
+        border-bottom: 1px solid #a6a6a6;
+        z-index: 3;
+    }
+    .iconbox {
+        position: absolute;
+        top: -26px;
+        left: calc(50% - 26px);
+        width: 47px;
+        height: 47px;
+        background: #efefef;
+        border: 1px solid #818181;
+        transform: rotate(45deg);
+        padding: 4px;
+    }
+    .iconbox-inner {
+        position: relative;
+        width:45px;
+        height: 45px;
+        border: 1px solid #818181;
+        overflow: hidden;
+    }
+    .iconbox-inner img {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 65px;
+        height: 65px;
+        transform: rotate(-45deg);
+    }
+    
+    .left {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: calc(50% + 2px);
+        height: calc(100% - 76px);
+        background: #e7e9e9;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+    .links {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        height: calc(100% - 200px);
+        width: 100%;
+        text-align: left;
+    }
+    .links a {
+        display: inline-block;
+        background: #ffffff;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        line-height: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .links a:hover {
+        padding-left: 25px;
+    }
+   ul.tabs{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    ul.tabs li{
+        display: inline-block;
+        background: #ffffff;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        line-height: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    ul.tabs li i {
+        display: none;
+        margin-right: 5px;
+    }
+    ul.tabs li.current i {
+        display: inline-block;
+    }
+    ul.tabs li:hover{
+        padding-left: 25px;
+    }
+
+    .tab-content{
+        margin-top: 10px;
+        display: none;
+    }
+
+    .tab-content.current{
+        display: inherit;
+    }
+    
+    .col-left {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        float: left;
+    }
+    .col-right {
+        width: calc(50% - 10px);
+        float: left;
+    }
+    .col-right .section {
+        max-height: 128.75px;
+        overflow: auto;
+    }
+    .col-wide {
+        width: 100%;
+        float: left;
+    }
+    .tab-content h1 {
+        font-family: slowly_oneregular;
+        font-size: 42px;
+        color: #707c7f;
+        text-transform: lowercase;
+        margin: 0 0 10px;
+        font-weight: normal;
+    }
+    .section {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        background: #ffffff;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 13px;
+        color: #707c7f;
+        line-height: 160%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 50px;
+        font-weight: 300;
+    }
+    
+    #title {
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        width: calc(50% - 40px);
+        padding: 0 10px;
+        font-size: 100px;
+        text-align: right;
+        height: 41px;
+        font-family: slowly_oneregular;
+        color: #ffffff;
+        text-shadow: -2px -2px 0 #989898, 2px -2px 0 #989898, -2px 2px 0 #989898, 2px 2px 0 #989898;
+    }
+    
+    #title a {
+        color: #ffffff;
+        transition-duration: 1s;
+    }
+    
+    #title a:hover {
+        color: #ffffff;
+    }
+    
+    .right {
+        position: fixed;
+        top: 76px;
+        right: 0;
+        width: calc(50% - 2px);
+        height: calc(100% - 76px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .tmblr-iframe.iframe-controls--desktop {
+      top:90%!important;
+      left:0%!important;
+      position:fixed!important;
+      z-index:999999999!important;
+    }
+    
+    .tmblr-iframe--desktop-logged-in-controls {
+      -webkit-filter:invert(100%);
+      -moz-filter:invert(100%);
+      -o-filter:invert(100%);
+      -ms-filter:invert(100%);
+      filter:invert(100%);
+      opacity:0.3;
+      }
+      
+      @media screen and (max-width: 1300px) {
+          #title {
+              font-size: 80px;
+          }
+      }
+      @media screen and (max-width: 1100px) {
+          #title {
+              font-size: 60px;
+          }
+          .col-left {
+              width: 100%;
+          }
+          .col-right {
+              width: 100%;
+          }
+      }
+    </style>
+    
+
+</html>
+    #title {
+        position: fixed;
+        bottom: 20px;
+        left: 0px;
+        width: calc(50% - 40px);
+        padding: 0 10px;
+        font-size: 150px;
+        text-align: right;
+        height: 41px;
+        font-family: slowly_oneregular;
+        color: #ffffff;
+        text-shadow: -2px -2px 0 #989898, 2px -2px 0 #989898, -2px 2px 0 #989898, 2px 2px 0 #989898;
+    }
+    
+    #title a {
+        color: #ffffff;
+        transition-duration: 1s;
+    }
+    
+    #title a:hover {
+        color: #ffffff;
+    }
+    
+    .right {
+        position: fixed;
+        top: 76px;
+        right: 0;
+        width: calc(50% - 2px);
+        height: calc(100% - 76px);
+        background: #e7e9e9;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+    
+    
+    .tmblr-iframe.iframe-controls--desktop {
+      top:90%!important;
+      left:0%!important;
+      position:fixed!important;
+      z-index:999999999!important;
+    }
+    
+    .tmblr-iframe--desktop-logged-in-controls {
+      -webkit-filter:invert(100%);
+      -moz-filter:invert(100%);
+      -o-filter:invert(100%);
+      -ms-filter:invert(100%);
+      filter:invert(100%);
+      opacity:0.3;
+      }
+    </style>
+    
+
+</html>

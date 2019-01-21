@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!---- theme by http://codesbylux.tumblr.com --->
+        <title>Characters</title>
+        <link rel="shortcut icon" href="https://static.tumblr.com/2477bc070ab0aa729dc8870945ffb2c2/t22pj5r/jRqplnobe/tumblr_static_71hpplu83aww48cw88o0o48s8.jpg">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <link href="//use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+             // init Isotope
+             var $grid = $('.grid').isotope({
+               itemSelector: '.grid-item'
+             });
+            
+             // store filter for each group
+             var filters = {};
+            
+             $('.filters').on( 'click', '.button', function() {
+               var $this = $(this);
+               // get group key
+               var $buttonGroup = $this.parents('.button-group');
+               var filterGroup = $buttonGroup.attr('data-filter-group');
+               // set filter for group
+               filters[ filterGroup ] = $this.attr('data-filter');
+               // combine filters
+               var filterValue = concatValues( filters );
+               // set filter for Isotope
+               $grid.isotope({ filter: filterValue });
+             });
+            
+             // change is-checked class on buttons
+             $('.button-group').each( function( i, buttonGroup ) {
+               var $buttonGroup = $( buttonGroup );
+               $buttonGroup.on( 'click', 'button', function() {
+                 $buttonGroup.find('.is-checked').removeClass('is-checked');
+                 $( this ).addClass('is-checked');
+               });
+             });
+            
+            });
+            
+            // flatten object by concatting values
+            function concatValues( obj ) {
+             var value = '';
+             for ( var prop in obj ) {
+               value += obj[ prop ];
+             }
+             return value;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/characters">Characters</a>
+            <a href="/tagged/resources">Resources</a>
+            <a href="/tagged/inspiration">Inspiration</a>
+            <a href="/tags">Tag List</a>
+            <a href="//codesbylux.tumblr.com">Codes</a>
+        </div>
+        <div class="nav-border">
+            <div class="iconbox"><div class="iconbox-inner">
+                <img src="https://static.tumblr.com/2477bc070ab0aa729dc8870945ffb2c2/t22pj5r/jRqplnobe/tumblr_static_71hpplu83aww48cw88o0o48s8.jpg">
+            </div></div>
+        </div>
+        
+        <div class="left">
+            <div id="title">lux.</div>
+            <div class="links" style="display: table;">
+                <div style="display: table-cell; vertical-align: bottom;" class="filters">
+                    <div class="button-group" data-filter-group="group1">
+                        <button class="button is-checked" data-filter="">group 1</button><br>
+                        <button class="button" data-filter=".i1">item 1</button><br>
+                        <button class="button" data-filter=".i2">item 2</button><br>
+                        <button class="button" data-filter=".i3">item 3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right">
+           <div class="grid">
+
+
+                <div class="grid-item i1">
+                    <div class="cardbg"></div>
+                    <div class="card">
+                        <a href="/name">
+                            <img src="http://placehold.it/190x260">
+                            <div class="charname">
+                                name.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-item i2">
+                    <div class="cardbg"></div>
+                    <div class="card">
+                        <a href="/name">
+                            <img src="http://placehold.it/190x260">
+                            <div class="charname">
+                                name.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+
+    </body>
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <style type="text/css">
+    
+    @font-face {
+        font-family: 'slowly_oneregular';
+        src: url('//dl.dropboxusercontent.com/s/ccfzyjzewgshe6n/slowly_one-webfont.eot');
+        src: url('//dl.dropboxusercontent.com/s/ccfzyjzewgshe6n/slowly_one-webfont.eot?#iefix') format('embedded-opentype'),
+             url('//dl.dropboxusercontent.com/s/3t1wjioqpakrp09/slowly_one-webfont.woff2') format('woff2'),
+             url('//dl.dropboxusercontent.com/s/ym56ploy6zsdc7n/slowly_one-webfont.woff') format('woff'),
+             url('//dl.dropboxusercontent.com/s/djada1vuq0959r9/slowly_one-webfont.ttf') format('truetype'),
+             url('//dl.dropboxusercontent.com/s/jomhvro80lx1kq3/slowly_one-webfont.svg#slowly_oneregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    body {
+        background: #e7e9e9;
+        margin: 0px;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 10px;
+        line-height: 100%;
+    }
+    
+    a {
+        text-decoration:none;
+        outline:none;
+        -moz-outline-style:none;
+        color:#707c7f;
+        transition-duration: 1s;
+    }
+    
+    img {
+        border:none;
+    }
+    
+    h1 {
+        font-size:15px;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #939fa2;
+        border-bottom: 1px solid #818181;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigation a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .nav-border {
+        position: fixed;
+        top: 71px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #efefef;
+        border-bottom: 1px solid #a6a6a6;
+        z-index: 3;
+    }
+    .iconbox {
+        position: absolute;
+        top: -26px;
+        left: calc(50% - 26px);
+        width: 47px;
+        height: 47px;
+        background: #efefef;
+        border: 1px solid #818181;
+        transform: rotate(45deg);
+        padding: 4px;
+    }
+    .iconbox-inner {
+        position: relative;
+        width:45px;
+        height: 45px;
+        border: 1px solid #818181;
+        overflow: hidden;
+    }
+    .iconbox-inner img {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 65px;
+        height: 65px;
+        transform: rotate(-45deg);
+    }
+    
+    .left {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: calc(50% + 2px);
+        height: calc(100% - 76px);
+        background: url(https://static.tumblr.com/f3f40a8e8cf49114d9c9583440b77d5c/t22pj5r/zxYplnobe/tumblr_static_62eidgwjym0wgk80s0ggkg4ws.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .links {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        height: calc(100% - 200px);
+        width: 100%;
+        text-align: right;
+    }
+    .links a {
+        display: inline-block;
+        background: #ffffff;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        line-height: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .links a:hover {
+        padding-right: 25px;
+    }
+    
+    .grid {
+        max-width: 590px;
+        margin: 0 auto;
+    }
+    .grid-item {
+        width:235px;
+        height:300px;
+        margin:30px;
+        position: relative;
+    }
+    @keyframes example {
+        0% {transform: rotate(5deg);}
+        25% {transform: rotate(6deg);}
+        50% {transform: rotate(5deg);}
+        75% {transform: rotate(4deg);}
+        100% {transform: rotate(5deg);}
+    }
+    .grid-item:hover .cardbg {
+        animation-name: example;
+        animation-duration: 0.5s;
+        animation-iteration-count: 3;
+    }
+    .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 204px;
+        height: 279px;
+        background: #ffffff;
+        border: 1px solid #a1a1a1;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .cardbg {
+        box-sizing: border-box;
+        width: 204px;
+        height: 279px;
+        background: #ffffff;
+        border: 1px solid #a1a1a1;
+        padding: 5px;
+        transform: rotate(5deg);
+    }
+    .card img {
+        width: 190px;
+        height: 265px;
+        border: 1px solid #a1a1a1;
+    }
+    .charname {
+        width: 180px;
+        padding: 0 5px;
+        text-align: right;
+        margin-top: -20px;
+        font-size: 50px;
+        text-transform: lowercase;
+        font-family: slowly_oneregular;
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #989898, 1px -1px 0 #989898, -1px 1px 0 #989898, 1px 1px 0 #989898;
+        z-index: 5;
+        
+    }
+    .button-group {
+        margin-top: 15px;
+    }
+    button {
+        display: inline-block;
+        background: #ffffff;
+        color: #707c7f;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        padding: 5px 15px;
+        line-height: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover {
+        padding-right: 25px;
+    }
+    #title {
+        position: fixed;
+        bottom: 20px;
+        left: 0px;
+        width: calc(50% - 40px);
+        padding: 0 10px;
+        font-size: 150px;
+        text-align: right;
+        height: 41px;
+        font-family: slowly_oneregular;
+        color: #ffffff;
+        text-shadow: -2px -2px 0 #989898, 2px -2px 0 #989898, -2px 2px 0 #989898, 2px 2px 0 #989898;
+    }
+    
+    #title a {
+        color: #ffffff;
+        transition-duration: 1s;
+    }
+    
+    #title a:hover {
+        color: #ffffff;
+    }
+    
+    .right {
+        position: fixed;
+        top: 76px;
+        right: 0;
+        width: calc(50% - 2px);
+        height: calc(100% - 76px);
+        background: #e7e9e9;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+    
+    
+    .tmblr-iframe.iframe-controls--desktop {
+      top:90%!important;
+      left:0%!important;
+      position:fixed!important;
+      z-index:999999999!important;
+    }
+    
+    .tmblr-iframe--desktop-logged-in-controls {
+      -webkit-filter:invert(100%);
+      -moz-filter:invert(100%);
+      -o-filter:invert(100%);
+      -ms-filter:invert(100%);
+      filter:invert(100%);
+      opacity:0.3;
+      }
+    </style>
+    
+
+</html>
